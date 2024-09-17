@@ -4,15 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Demo</title>
+    <title>MOS-TTS Demo Page</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+            table-layout: fixed;
+        }
+
+        table, th, td {
+            border: none; 
+        }
+
+        table {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        th {
+            border-bottom: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        td:first-child, th:first-child {
+            width: 30%; 
+        }
+
+        audio {
+            width: 100%; 
+            max-width: 200px; 
+        }
+
+        @media (max-width: 600px) {
+            audio {
+                max-width: 100px; 
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Audio Demo</h1>
-    <audio controls>
-        <source src="audio/demo.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
+    <h1>MOS-TTS Demo Page</h1>
+
+    <p>
+        <a href="https://github.com/610494/MOS-TTS/tree/main">official repo</a>
+    </p>
+
+    <table>
+        <tr>
+            <th>Text</th>
+            <th>Fastpitch</th>
+            <th>Fastpitch_UW</th>
+            <th>Fastpitch_SW</th>
+        </tr>
+
+        <tr>
+            <td>Once held by Hobson and Dewey, now carried by Mother Eddy and Brother Dowie.</td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_baseline_BG/121_121726_000025_000001.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_UW_BG/121_121726_000025_000001.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_SW_BG/121_121726_000025_000001.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td>The roarings become lost in the distance.</td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_baseline_BG/260_123288_000003_000002.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_UW_BG/260_123288_000003_000002.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_SW_BG/260_123288_000003_000002.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td>The old people in the mountains plant lindens to purify the forest, and to do away with the spells that come from the old trees they say have lasted from heathen times.</td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_baseline_BG/237_134500_000014_000001.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_UW_BG/237_134500_000014_000001.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/Fastpitch_SW_BG/237_134500_000014_000001.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
